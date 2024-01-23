@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--sets language to English-->
+<html lang="en">
+<head>
+    <!--set metadata-->
+    <meta charset="UTF-8">
+    <meta name="description" content="An online source for everything fly fishing!">
+    <meta name="author" content="Tom Cocker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFAngling</title>
+
+    <style>
+        /* id attribute for main page header */
+        #header {
+            /* background,border, and font/text styling for main header */
+            background-color: rgb(185, 185, 144); 
+            color: rgb(4, 3, 3);
+            border: 2px solid rgba(62, 92, 61);
+            width: 350px;
+            padding: 3px;
+            margin-bottom: 5px;
+            text-align: center;
+            font-size: 18px;
+            font-family: "Times New Roman", Times, serif;
+            font-variant: small-caps;
+        } 
+
+        /* flex container to put header2 class in horizontal rows */
+        .header2flex {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+
+        /* class attribute for all dropdown tabs */
+        .header2 {
+            background-color: rgb(145, 198, 144);
+            color: rgb(0, 0, 0);
+            border: 4px solid rgb(33, 52, 32);
+            margin: 1px; 
+            padding: 2px; 
+            text-decoration: underline;
+            flex-grow: 1; 
+            text-align: center; 
+        }
+
+        /* attribute selector for elements with dropdown role */
+        [role="dropdown"] {
+            /* font weight, style, and color */
+            font-weight: bold; 
+            font-style: italic; 
+            color:rgb(33, 52, 32); 
+        }
+
+        /* class to update font family of report header*/
+        .report {
+            /* font family and spacing between text */
+            font: italic small-caps normal Georgia, serif;
+            line-height: 1;
+        }
+
+        /* adds background image to page */
+        body {
+            background-image: url('river.jpg'); /* inputs image from files */
+            background-size: cover; /* covers entire page */
+        } 
+    </style>
+</head>
+
+<body>
+    <!-- creates and centers header with id attributes -->
+    <center>
+    <header id="header">
+        <h1>Middle Fork Angling</h1>
+    </header>
+    </center>
+
+    <!-- calls header2flex class to allign header2 elements horizontally -->
+    <div class="header2flex">
+
+    <!-- styles headers according to header2 class and dropdown role -->
+        <div class="header2" role="dropdown">
+            <h2>Online Lessons</h2>
+            <p>Learn to cast, tie, and read the river</p>
+        </div>
+
+        <div class="header2" role="dropdown">
+            <!-- makes title of tab a hyperlink to more information-->
+            <h2><a href="https://www.hatchmag.com/articles/choosing-your-fly/7713579">Fly Selection</a></h2>
+            <p>A guide to choosing the right fly</p>
+        </div>
+
+        <div class="header2" role="dropdown">
+            <h2><a href="https://drifthook.com/blogs/discover/what-type-of-fish-do-you-catch-fly-fishing">Common Species</a></h2>
+            <p>Identify your catch</p>
+        </div>
+
+    <!-- styles according to header2 and report class -->
+        <div class="header2 report">
+            <h2><a href="https://fishingreports.orvis.com/west/oregon">Reports</a></h2>
+            <p>Fishing reports by guides and fellow anglers</p>
+        </div>
+    </div>
+</body>
+</html>

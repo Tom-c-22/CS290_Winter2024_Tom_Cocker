@@ -1,0 +1,216 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="description" content="An online source for everything fly fishing!"> 
+    <meta name="author" content="Tom Cocker"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- changes webpage size depending on device -->
+
+    <title>MFAngling</title> <!-- title of webpage -->
+
+    <style> /* CSS styles */
+        
+        body {
+            background-image: url('Trout_Background.jpg'); /* imports background image from file */
+            background-repeat: no-repeat;
+            background-size: auto;
+            margin: 0; /* sets margin for body/background */
+        }
+
+        header {
+            display: flex; /* uses flex to allow objects in header to change size to fit in area */
+            justify-content: space-between; 
+            align-items: center; /* aligns header text to center of box */
+            padding: 30px; 
+            color: white; /* white text color */
+        }
+
+        header h1 {
+            font-size: 35px; /* font size for title */
+            margin: 0; 
+            padding: 0; 
+        }
+
+        /* CSS styling for the navigation bar */
+        .navbar {
+            display: flex; /* uses flex to alin navigation bar in the same row */
+        }
+
+        .navbar a, .dropdown {
+            -webkit-transition: color 0.4s ease; /* color change effect for webkit browsers */
+            transition: color 0.4s ease; /* transition effect */
+            color: white; /* white text color */
+            text-decoration: none; /* no decoration when the headers of linked */
+            padding: 0 10px; 
+        }
+
+        .navbar a:hover, .dropdown:hover {
+            color: #ffa500; /* when hovered, text changes from white to orange */
+        }
+
+        /* CSS styling for the dropdown bar */
+        .dropdown-content {
+            display: none; /* doesn't show dropdown unless interacted with */
+            position: absolute; /* places dropdown directly below the navigation bar title */
+            background-color: rgb(231, 139, 0); 
+            width: 160px; /* fixed width */
+            height: 140px; /* fixed height */
+            overflow: auto; /* includes scroll tab if the information doesn't fit fixed height/width */
+            z-index: 1; /* puts dropdown above other text, background, etc */
+        }
+
+        .dropdown-content a {
+            display: block; /* displays element as block element */
+            padding: 12px 16px; 
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block; /* hovering mouse drops the dropdown menu */
+        }
+
+        /* CSS styling for search box */
+        .search_box {
+            display: flex; 
+            justify-content: flex-end; /* aligns search box at the right of screen */
+            padding: 25px 30px; 
+        }
+
+        .search {
+            padding: 10px; 
+            font-size: 16px; /* font size for text box */
+            border: 1px solid rgba(255, 255, 255, 0.5); /* border of search box */
+            border-radius: 5px; /* rounds edges of search box */
+            color: white; /* white text color */
+            background-color: rgba(27, 27, 27, 0.7); /* background color of serach box*/
+        }
+
+        .search::placeholder {
+            color: rgba(255, 255, 255, 0.7); /* sets text color before typign in search box */
+        }
+
+        /* CSS styling for information box */
+        .intro-section {
+            display: flex; 
+            float: left; /* puts the information box on the left side */
+            flex-direction: column; /* stacks text/objects vertically */
+            align-items: flex-start; /* puts information in the box on left side of box */
+            padding: 20px; 
+            color: white; /* white text color */
+            background-color: rgba(27, 27, 27, 0.402); /* background color with transparency */
+            margin: 50px 60px; 
+            box-sizing: border-box; 
+        }
+
+        .intro-text {
+            font-size: 75px; /* font size for information box */
+            width: 75%; /* only 75% of box can be taken by text/images */
+            margin-bottom: 10px; 
+            box-sizing: border-box; 
+        }
+
+        .learn-more-btn {
+            padding: 20px 30px; 
+            background-color: orange; 
+            color: white; 
+            border: none; 
+            cursor: pointer; /* switches cursor type when box is highlighted */
+            white-space: nowrap; /* prevents text wrapping */
+            float: none; 
+            font-size: 20px; 
+            box-sizing: border-box; 
+        }
+
+        .clear-floats {
+            clear: both; /* clears floats, adding space */
+        }
+
+        /* CSS styling for collapsible containers */
+        .collapsible-container details {
+            margin: 20px 60px; 
+            background-color: rgba(255, 145, 0, 0.521); 
+            color: white; 
+            border-radius: 5px; 
+            padding: 20px;  
+        }
+
+        .collapsible-container summary {
+            cursor: pointer; /* switches cursor type when box is highlighted */
+            font-size: 25px; 
+            font-weight: bold; 
+        }
+
+    </style>
+</head>
+
+<!-- more HTML-->
+<body>
+    <header>
+        <h1>MIDDLE FORK OUTFITTERS</h1> <!-- title of website -->
+        <div class="navbar">
+            <div class="dropdown">
+                FLY ENCYCLOPEDIA <!-- dropdown title -->
+                <!-- links to respective information -->
+                <div class="dropdown-content"> 
+                    <a href="link">Streamers</a> 
+                    <a href="link">Dry Flies</a>
+                    <a href="link">Nymphs</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                LESSONS <!-- dropdown title -->
+                <div class="dropdown-content"> 
+                    <!-- links to respective information -->
+                    <a href="link">Casting</a> 
+                    <a href="link">Knot Tying</a>
+                    <a href="link">Fly Tying</a>
+                    <a href="link">Gear Selection</a>
+                    <a href="link">Reading Water</a>
+                    <a href="link">Gear Repair</a>
+                    <a href="link">etc</a>
+                    <a href="link">etc</a>
+                    <a href="link">etc</a>
+                    
+                </div>
+            </div>
+
+            <a href="link">REPORTS</a> <!-- link to reports forum -->
+            <a href="link">REGULATIONS</a> <!-- link to local fishing regulations -->
+        </div>
+    </header>
+
+    <div class="search_box">
+        <input type="text" placeholder="SEARCH" class="search"> <!-- search box -->
+    </div>
+
+    <div class="intro-section">
+        <div class="intro-text">IDENTIFY YOUR CATCH: North American Trout Species</div> <!-- opening eye catcher -->
+        <button class="learn-more-btn">Learn More</button> <!-- button to linked information -->
+    </div>
+
+    <div class="clear-floats"></div> <!-- clears floats above, adding space -->
+
+    <!-- collapsible containers with small bits of info -->
+    <div class="collapsible-container">
+        <details>
+            <summary>Check your local weather report</summary> 
+            <p>Make sure to check your local weather reports before heading out to the water.
+                Rain, snow, and intense heat all impact the water visibility, insect hatches,
+                and potential dangers of wading, heatstroke, and hypothermia.
+            </p> 
+        </details>
+    </div>
+
+    <div class="collapsible-container">
+        <details>
+            <summary>Buy a fishing license before going out</summary> 
+            <p>Fishing licenses can be an inconvenient purchase for some. The money spent 
+                helps regulate fisheries, stop poachers, and keep our water ways safe
+                and healthy.
+            </p> 
+        </details>
+    </div>
+
+</body>
+</html>

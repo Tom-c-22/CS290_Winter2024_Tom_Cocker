@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Fly Generator</title>
+
+    <link rel="stylesheet" href="JQ_CSS.css"> <!-- CSS file -->
+</head>
+
+<body>
+    <div class="header"> 
+        <header>Random Fly Generator</header> <!-- title for page -->
+    </div>
+    
+    <div class="search_box">
+        <input type="text" class="search" id="input_season" placeholder="Enter a season...">
+        <button id="search_button">Generate</button> <!--button to generate flies-->
+    </div>
+
+    <div class="result_title">Fly Deatails</div> <!-- title -->
+    <div id="search_results"></div> <!--random fly information-->
+    
+    <div id="casting_tips_container">
+        <h3>Casting Tips + </h3> <!-- title -->
+        <div id="casting_tips"></div> <!--casting tips for type of fly-->
+    </div>
+
+    <script src= "https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- jquery library -->
+    <script src= "https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+    integrity= "sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" 
+    crossorigin= "anonymous"></script> <!--jquery UI library for accordion-->
+    <script src="JQ_JS.js"></script> <!-- javascript file -->
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+The files with A4 in the front is for my webpage that uses javascript and generates a random fly after the user
+inputs a specific season they're fishing in. I'll be expanding/honing in the fly selection/array for my final project. 
+
+The files with JQ in the front are for the same webpage but I used a library (jquery) to add some small design elements like an accordion to reduce the amount of space taken up on the screen and fade in. I'll experiment more with jquery on my final project but after looking into it, it seems like a useful library to spruce up a design and enhance usability both for me and the user.

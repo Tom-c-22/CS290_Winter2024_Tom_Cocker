@@ -12,4 +12,3 @@ I’ve been using this website for avalanche forecasts for several years. The la
 
 5. https://www.blackdiamondequipment.com/en_US/
 I like the modern design of this website homepage. When a cursor is moved over a picture it moves and the light dims. It gives off the feeling that you’re actually interacting with the website and brings it to life a little. While I enjoy the modern design, I think the home page is somewhat cluttered with large images while it doesn’t offer a lot of hyperlinks to actually access the products which the users are on there to look at. If I was to change anything, I would change the home pages layout to include more links to products. While it’s pretty to look at and enjoyable to use, it lacks functionality in my opinion. 
-
